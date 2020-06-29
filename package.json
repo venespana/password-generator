@@ -1,5 +1,5 @@
 {
-  "name": "password-generator",
+  "name": "@venespana/password-generator",
   "version": "1.0.0",
   "description": "A simple password generator",
   "main": "dist/index.js",
