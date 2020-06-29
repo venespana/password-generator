@@ -7,9 +7,20 @@
   "author": "venespana<venespana159@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "onchange 'src/**/*.ts' -- yarn run build",
+    "test": "jest",
+    "test:watch": "jest --coverage --watchAll",
+    "view:coverage": "serve coverage/lcov-report",
+    "clean": "rm -rf coverage src/**/*.js src/**/*.map"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "@types/node": "^14.0.14",
+    "@types/source-map-support": "^0.5.1",
+    "jest": "^26.1.0",
+    "source-map-support": "^0.5.19",
+    "ts-jest": "^26.1.1",
     "typescript": "^3.9.5"
   }
 }
